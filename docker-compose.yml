@@ -1,0 +1,17 @@
+services:
+  ms365-mcp:
+    image: lharillo/ms365-mcp:latest
+    container_name: ms365-mcp
+    ports:
+      - "3000:3000"
+    environment:
+      - MS365_MCP_ORG_MODE=true
+      - MS365_MCP_TOKEN_CACHE_PATH=/app/data/msal-cache.json
+      - MS365_MCP_SELECTED_ACCOUNT_PATH=/app/data/selected-account.json
+      - LOG_LEVEL=info
+    volumes:
+      - ms365-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  ms365-data:
