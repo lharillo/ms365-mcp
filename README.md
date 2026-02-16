@@ -1,6 +1,12 @@
 # ms365-mcp
 
+[![Docker Hub](https://img.shields.io/docker/v/lharillo/ms365-mcp?label=Docker%20Hub&logo=docker)](https://hub.docker.com/r/lharillo/ms365-mcp)
+[![GitHub](https://img.shields.io/badge/GitHub-lharillo%2Fms365--mcp-blue?logo=github)](https://github.com/lharillo/ms365-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Dockerized deployment of the [ms-365-mcp-server](https://github.com/Softeria/ms-365-mcp-server) — a Model Context Protocol (MCP) server for Microsoft 365 services via the Microsoft Graph API.
+
+**Docker Hub**: [`lharillo/ms365-mcp`](https://hub.docker.com/r/lharillo/ms365-mcp)
 
 This project provides a production-ready Docker image and Kubernetes manifests for self-hosting the MCP server with Streamable HTTP transport, OAuth 2.1 authentication, and persistent token caching.
 
@@ -139,6 +145,11 @@ docker push lharillo/ms365-mcp:latest
 ## License
 
 MIT
+
+## Links
+
+- **Docker Hub**: [lharillo/ms365-mcp](https://hub.docker.com/r/lharillo/ms365-mcp)
+- **GitHub**: [lharillo/ms365-mcp](https://github.com/lharillo/ms365-mcp)
 
 ## Credits
 
